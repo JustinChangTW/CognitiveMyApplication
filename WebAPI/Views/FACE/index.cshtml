@@ -1,0 +1,36 @@
+﻿<html>
+<head>
+    <title>Family Verification</title>
+</head>
+<body>
+    <div><h2>Family Verification</h2></div>
+    <div>
+        <form action="/FACE/Verification" method="post" enctype="multipart/form-data">
+            <br />
+            <div>
+                <label>Text Return</label><br />
+                <label>File:</label>
+                <input type="file" name="file" />
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+    <div>
+        <form action="/FACE/VerificationWithVoiceReturn" method="post" enctype="multipart/form-data">
+            <br />
+            <div>
+                <label>Voice Return</label><br />
+                <label>File:</label>
+                <input type="file" name="file" /><br />
+                <label>Lang:</label>
+                <select name="lang">
+                    <option value="en-US">en-US</option>
+                    <option value="zh-TW">zh-TW</option>
+                </select> 
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+

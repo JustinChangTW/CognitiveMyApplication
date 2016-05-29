@@ -1,0 +1,39 @@
+﻿<html>
+<head>
+    <title>Text to Speech</title>
+</head>
+<body>
+    <div><h2>Text 2 Speech ; Speech 2 Text</h2></div>
+    <div>
+        <form action="/SPEECH/Text2Speech" method="get">
+            <br />
+            <div>
+                <label>Text to Voice</label><br />
+                <label>Text:</label>
+                <input type="text" name="text" />
+            </div>
+            <div>
+                <label>Lang:</label>
+                <select name="lang">
+                    <option value="en-US">en-US</option>
+                    <option value="zh-TW">zh-TW</option>
+                </select> 
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <div>
+        <form action="/SPEECH/Speech2Text" method="post" enctype="multipart/form-data">
+            <br />
+            <div>
+                <label>Voice to Text</label><br />
+                <label>Voice File:</label>
+                <input type="file" name="file" />
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

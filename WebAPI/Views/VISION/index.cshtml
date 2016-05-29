@@ -1,0 +1,31 @@
+﻿<html>
+<head>
+    <title>Upload</title>
+</head>
+<body>
+    <div><h2>Compute Vision</h2></div>
+    <div>
+        <form action="/VISION/Compute" method="post" enctype="multipart/form-data">
+            <br />
+            <label>Text Return</label><br />
+            <div>
+                <label>File:</label>
+                <input type="file" name="file" />
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+    <div>
+        <form action="/VISION/ComputeWithVoiceReturn" method="post" enctype="multipart/form-data">
+            <br />
+            <label>Voice Return</label><br />
+            <div>
+                <label>File:</label>
+                <input type="file" name="file" />
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+

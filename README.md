@@ -11,14 +11,8 @@ Step 3: Under CognitiveMyApplication, create two Cognitive APIs, one for FACE, a
 
 Step 4: Open brower, access to URL(https://www.microsoft.com/cognitive-services/en-us/computer-vision-api), press "Get Start for Free" to subscribe VISION API.
 
-Step 5: Open Visual Studio 2015, create a ASP.NET Web API project (MVC + Web API), and update web.config with below <appSetting> and APIs.
+Step 5: Open Visual Studio 2015, create a ASP.NET Web API project (MVC + Web API), and update web.config by reference sample.
 
-<appSettings>
-    <add key="FACE_API_Key" value="{Your Face API Key}"/>
-    <add key="VISION_API_Key" value="{Your Vision API Key}"/>
-    <add key="SPEECH_API_Name" value="{Your Speech API Account}"/>
-    <add key="SPEECH_API_Key" value="{Your Speech API Key}"/>    
-</appSettings>
 Step 6: Copy All controller class, model class and view files from this GitHub repository to your application.
 
 Step 7: Add below Package from Nuget Package Manager into your application:
